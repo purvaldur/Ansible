@@ -2,5 +2,6 @@
   hosts: all
   tasks:
     - name: Create test dir
-      file: path=/maas
-      state: directory
+      file:
+          path=/maas
+          state=directory
