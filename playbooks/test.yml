@@ -1,0 +1,6 @@
+- name: Test playbook
+  hosts: all
+  tasks:
+    - name: Create test dir
+      file: path=/maas
+      state: directory
