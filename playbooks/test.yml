@@ -2,6 +2,7 @@
   hosts: all
   tasks:
     - name: Create test dir
+      become: true
       file:
           path=/maas
           state=directory
